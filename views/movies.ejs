@@ -1,0 +1,15 @@
+<div class="movies">
+    <h1 class="movies__header">Våra filmer</h1>
+    <ul>
+        <% if (typeof movies != undefined) { %>
+            <% movies.forEach(movie => { %>
+                <div class="movies__card">
+                    <a href="/movie/<%= movie.id %>">
+                        <img class="movies__card__image" src="<%= movie.attributes.image.url %>">
+                        <p><%= movie.attributes.title %></p>
+                    </a>
+                </div>
+            <% }) %>
+        <% } %>
+    </ul>
+</div>
