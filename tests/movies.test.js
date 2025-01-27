@@ -1,8 +1,6 @@
 import {expect, test} from '@jest/globals';
 import request from 'supertest';
-import { getMoviesFromAPI } from '../static/js/movieRetriever.js';
-
-import app from "../static/js/app.js";
+import { app } from "../static/js/app.js";
 
 
 test('/Movies page should list all titles of the movies correct.', async () => {
