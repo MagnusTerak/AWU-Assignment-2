@@ -32,12 +32,16 @@ app.get("/movies", async (req, res) => {
     res.render("movies", {movies: loadedMovies.data});
 })
 
+
+import MarkdownIt from "markdown-it";
+const md = MarkdownIt();
+
 app.get("/movie/:id", async (req, res) => {
     let loadedMovie = await getMovieFromId(req.params.id);
 
-    console.log(loadedMovie);
+    let introTextHTML = md.render(loadedMovie.data.attributes.intro);
 
-    res.render("movie", {movie: loadedMovie.data});
+    res.render("movie", {movie: loadedMovie.data, markedIntroText: introTextHTML});
 })
 
 app.listen(PORT, () => {

@@ -797,6 +797,69 @@ body .cafe-menu__container .menu-section span {
   background-color: #c43c3a;
 }
 
+.movies--header {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+.movies {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 2.5rem 0 2.5rem;
+}
+.movies__card {
+  width: 25%;
+  padding: 1.5rem;
+}
+.movies__card__image {
+  width: 100%;
+  height: 80%;
+}
+.movies__card__title {
+  text-align: center;
+  color: #f1ddc5;
+}
+
+.singleMovieReturn {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #f1ddc5;
+  background-color: #1a323c;
+  border: 1.5px solid #f1ddc5;
+  border-radius: 2px;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  display: flex;
+  margin: auto;
+  width: 10%;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.singleMovie {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #f1ddc5;
+  width: 60%;
+  height: 40%;
+  margin: auto;
+}
+.singleMovie__img {
+  height: 50%;
+  width: 30%;
+  margin: auto;
+  display: block;
+}
+.singleMovie__title {
+  text-align: center;
+}
+
 body {
   background-color: #1a323c;
   font-size: 16px;
